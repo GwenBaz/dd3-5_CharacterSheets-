@@ -1,0 +1,42 @@
+[
+    {
+        "nom" : "Boule de feu", 
+        "niveau" : 3, 
+        "ecole" : "abjuration", 
+        "incantation" : "1 round",
+        "portee" : 45, 
+        "duree" : "instantanée", 
+        "sauvegarde" : ["réflexe", 20], 
+        "effet" : "Tire une boule de feu faisant 1d6 dégât / niveau de lanceur de sort. "
+    }, 
+    {
+        "nom" : "Boule de feu", 
+        "niveau" : 3, 
+        "ecole" : "invocation", 
+        "incantation" : "1 round",
+        "portee" : 45, 
+        "duree" : "instantanée", 
+        "sauvegarde" : ["réflexe", 20], 
+        "effet" : "Tire une boule de feu faisant 1d6 dégât / niveau de lanceur de sort. "
+    },
+    {
+        "nom" : "Boule de feu", 
+        "niveau" : 3, 
+        "ecole" : "evocation", 
+        "incantation" : "1 round",
+        "portee" : 45, 
+        "duree" : "instantanée", 
+        "sauvegarde" : ["réflexe", 20], 
+        "effet" : "Tire une boule de feu faisant 1d6 dégât / niveau de lanceur de sort. "
+    },
+    {
+        "nom" : "Boule de feu", 
+        "niveau" : 3, 
+        "ecole" : "evocation", 
+        "incantation" : "1 round",
+        "portee" : 45, 
+        "duree" : "instantanée", 
+        "sauvegarde" : ["réflexe", 20], 
+        "effet" : "Tire une boule de feu faisant 1d6 dégât / niveau de lanceur de sort. "
+    }
+]

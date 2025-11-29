@@ -1,0 +1,26 @@
+{
+    "elfe" : {
+        "competence" : [], 
+        "divers" : [], 
+        "caracBonus" : ["dex"], 
+        "caracMalus" : ["con"]
+    }, 
+    "nain" : {
+        "competence" : [], 
+        "divers" : [], 
+        "caracBonus" : ["con"], 
+        "caracMalus" : ["cha"]
+    }, 
+    "humain" : {
+        "competence" : [], 
+        "divers" : [], 
+        "caracBonus" : [], 
+        "caracMalus" : []
+    }, 
+    "gnome" : {
+        "competence" : [], 
+        "divers" : [], 
+        "caracBonus" : ["con"], 
+        "caracMalus" : ["for"]
+    }
+}

@@ -1,0 +1,71 @@
+[
+    {
+        "nom" : "Nolwenn", 
+        "race" : "Elf",
+        "classe" : "Roublard", 
+        "niveau" : 5,
+        "caracteristiques" : {
+            "force" : [20, 5, null, null], 
+            "dexterite" : [20, 5, null, null], 
+            "constitution" : [20, 5, null, null], 
+            "intelligence" : [20, 5, null, null], 
+            "sagesse" : [20, 5, null, null], 
+            "charisme" :[20, 5, null, null]
+        }, 
+        "sauvegarde" : {
+            "reflexe" : [10, 3, 5, 2, null],
+            "vigueur" : [10, 3, 5, 2, null],
+            "volonte" : [10, 3, 5, 2, null]
+
+        }, 
+        "attaques" : [
+            ["épée longue", 9, "2d6", 6, "19-20 x2", 12, ""]
+        ]
+    }, 
+    {
+        "nom" : "Groark", 
+        "race" : "Semi-Orc",
+        "classe" : "Guerrier", 
+        "niveau" : 5,
+        "caracteristiques" : {
+            "force" : [20, 5, null, null], 
+            "dexterite" : [20, 5, null, null], 
+            "constitution" : [20, 5, null, null], 
+            "intelligence" : [20, 5, null, null], 
+            "sagesse" : [20, 5, null, null], 
+            "charisme" :[20, 5, null, null]
+        }, 
+        "sauvegarde" : {
+            "reflexe" : [10, 3, 5, 2, null],
+            "vigueur" : [10, 3, 5, 2, null],
+            "volonte" : [10, 3, 5, 2, null]
+
+        }, 
+        "attaques" : [
+            ["épée longue", 24, "2d6", 6, "19-20 x2", 12, ""]
+        ]
+    }, 
+    {
+        "nom" : "Liliane", 
+        "race" : "Halfelin", 
+        "classe" : "Magicien", 
+        "niveau" : 5,
+        "caracteristiques" : {
+            "force" : [20, 5, 17, 3], 
+            "dexterite" : [20, 5, null, null], 
+            "constitution" : [20, 5, null, null], 
+            "intelligence" : [20, 5, null, null], 
+            "sagesse" : [20, 5, null, null], 
+            "charisme" :[20, 5, null, null]
+        }, 
+        "sauvegarde" : {
+            "reflexe" : [10, 3, 5, 2, null],
+            "vigueur" : [10, 3, 5, 2, null],
+            "volonte" : [10, 3, 5, 2, null]
+
+        }, 
+        "attaques" : [
+            ["épée longue", 9, "2d6", 6, "19-20 x2", 12, ""]
+        ]
+    }
+] 

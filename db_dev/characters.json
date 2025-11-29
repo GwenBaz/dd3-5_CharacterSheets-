@@ -1,0 +1,1350 @@
+[
+  {
+    "id": "char_13663",
+    "name": "GroaK",
+    "level": 5,
+    "class": "Guerrier",
+    "health": 10,
+    "health_max": 10,
+    "inventory": [
+      {
+        "name": "Torche",
+        "quantity": 12
+      },
+      {
+        "name": "Tente",
+        "quantity": 1
+      },
+      {
+        "name": "Ration",
+        "quantity": 12
+      },
+      {
+        "name": "Couteau",
+        "quantity": 2
+      }
+    ],
+    "spell_book": [],
+    "weapons": [
+      {
+        "name": "Épée à deux mains",
+        "damage": 6,
+        "dice": "2d6",
+        "touch": 13,
+        "critics": "19 - 20 x2",
+        "range": 0,
+        "description": "Magique +1"
+      },
+      {
+        "name": "Baffe",
+        "damage": 2,
+        "dice": "1d4",
+        "touch": 7,
+        "critics": "20 x2",
+        "range": 0,
+        "description": "fait très mal"
+      }
+    ],
+    "inate_skills": [
+      {
+        "name": "artisanat",
+        "carac": "intelligence",
+        "value": 0,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "bluff",
+        "carac": "charisma",
+        "value": 3,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "concentration",
+        "carac": "constitution",
+        "value": 2,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "contrefaçon",
+        "carac": "intelligence",
+        "value": 0,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "deguisement",
+        "carac": "charisma",
+        "value": 3,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "deplacement_silencieux",
+        "carac": "dexterity",
+        "value": 2,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "detection",
+        "carac": "wisdom",
+        "value": -1,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "diplomatie",
+        "carac": "charisma",
+        "value": 3,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "discretion",
+        "carac": "dexterity",
+        "value": 2,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "equilibre",
+        "carac": "dexterity",
+        "value": 2,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "equitation",
+        "carac": "dexterity",
+        "value": 2,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "escalade",
+        "carac": "strength",
+        "value": 11,
+        "points": 6,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "estimation",
+        "carac": "intelligence",
+        "value": 0,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "evasion",
+        "carac": "dexterity",
+        "value": 2,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "fouille",
+        "carac": "intelligence",
+        "value": 0,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "intimidation",
+        "carac": "charisma",
+        "value": 3,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "maitrise_des_cordes",
+        "carac": "dexterity",
+        "value": 2,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "natation",
+        "carac": "strength",
+        "value": 5,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "perception_auditive",
+        "carac": "wisdom",
+        "value": -1,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "premiers_secours",
+        "carac": "wisdom",
+        "value": -1,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "psychologie",
+        "carac": "wisdom",
+        "value": -1,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "renseignements",
+        "carac": "charisma",
+        "value": 3,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "representation",
+        "carac": "charisma",
+        "value": 3,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "saut",
+        "carac": "strength",
+        "value": 5,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "survie",
+        "carac": "wisdom",
+        "value": -1,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      }
+    ],
+    "non_inate_skills": [
+      {
+        "name": "acrobatie",
+        "carac": "dexterity",
+        "value": 2,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "art_de_la_magie",
+        "carac": "intelligence",
+        "value": 4,
+        "points": 4,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "connaissance_exploration",
+        "carac": "intelligence",
+        "value": 0,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "connaissance_folklore_local",
+        "carac": "intelligence",
+        "value": 0,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "connaissance_geographie",
+        "carac": "intelligence",
+        "value": 0,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "connaissance_histoire",
+        "carac": "intelligence",
+        "value": 0,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "connaissance_mysteres",
+        "carac": "intelligence",
+        "value": 0,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "connaissance_nature",
+        "carac": "intelligence",
+        "value": 0,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "connaissance_noblesse",
+        "carac": "intelligence",
+        "value": 0,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "connaissance_plan",
+        "carac": "intelligence",
+        "value": 0,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "connaissance_religion",
+        "carac": "intelligence",
+        "value": 0,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "crochetage",
+        "carac": "dexterity",
+        "value": 2,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "drecryptage",
+        "carac": "intelligence",
+        "value": 0,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "desamorsage",
+        "carac": "intelligence",
+        "value": 0,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "dressage",
+        "carac": "charisma",
+        "value": 3,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "escamotage",
+        "carac": "dexterity",
+        "value": 2,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "langue",
+        "carac": "intelligence",
+        "value": 0,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "profession",
+        "carac": "wisdom",
+        "value": -1,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "utilisation_d_objet_magiques",
+        "carac": "charisma",
+        "value": 3,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      }
+    ],
+    "pp": 0,
+    "gp": 0,
+    "sp": 0,
+    "cp": 0,
+    "gemmes": [],
+    "other_wealth": [],
+    "ac": 10,
+    "shield": "Pavois",
+    "armor": "Armure de plaque",
+    "strength": 20,
+    "dexterity": 14,
+    "constitution": 15,
+    "intelligence": 10,
+    "wisdom": 8,
+    "charisma": 16,
+    "temp_strength": -1,
+    "temp_dexterity": -1,
+    "temp_constitution": -1,
+    "temp_intelligence": -1,
+    "temp_wisdom": -1,
+    "temp_charisma": -1,
+    "gifts": [
+      "TAPPEEEEER",
+      "BAAFFEERRR ",
+      "TUUUEEERRR",
+      "MAANNGEERR "
+    ],
+    "reflex": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "fortitude": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "will": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "other_capacities": [],
+    "attack_base": 5
+  },
+  {
+    "id": "char_99851",
+    "name": "Madeleine",
+    "level": 5,
+    "class": "Roublard",
+    "health": 10,
+    "health_max": 10,
+    "inventory": [
+      {
+        "name": "grenade",
+        "quantity": 3
+      },
+      {
+        "name": "tente",
+        "quantity": 1
+      },
+      {
+        "name": "outils de cambriolage",
+        "quantity": 1
+      },
+      {
+        "name": "ration",
+        "quantity": 2
+      }
+    ],
+    "spell_book": [],
+    "weapons": [
+      {
+        "name": "Dague",
+        "damage": 9,
+        "dice": "1d6",
+        "touch": 12,
+        "critics": "19-20 x2 ",
+        "range": 12,
+        "description": "elle est mieux q'une dague ! "
+      },
+      {
+        "name": "Épée",
+        "damage": 3,
+        "dice": "1d8",
+        "touch": 8,
+        "critics": "20 x3 ",
+        "range": 12,
+        "description": "ceci est une épée"
+      }
+    ],
+    "inate_skills": [
+      {
+        "name": "artisanat",
+        "carac": "intelligence",
+        "value": 3,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "bluff",
+        "carac": "charisma",
+        "value": 1,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "concentration",
+        "carac": "constitution",
+        "value": 2,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "contrefaçon",
+        "carac": "intelligence",
+        "value": 3,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "deguisement",
+        "carac": "charisma",
+        "value": 1,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "deplacement_silencieux",
+        "carac": "dexterity",
+        "value": 5,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "detection",
+        "carac": "wisdom",
+        "value": 12,
+        "points": 13,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "diplomatie",
+        "carac": "charisma",
+        "value": 13,
+        "points": 12,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "discretion",
+        "carac": "dexterity",
+        "value": 5,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "equilibre",
+        "carac": "dexterity",
+        "value": 5,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "equitation",
+        "carac": "dexterity",
+        "value": 21,
+        "points": 16,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "escalade",
+        "carac": "strength",
+        "value": 1,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "estimation",
+        "carac": "intelligence",
+        "value": 3,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "evasion",
+        "carac": "dexterity",
+        "value": 5,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "fouille",
+        "carac": "intelligence",
+        "value": 3,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "intimidation",
+        "carac": "charisma",
+        "value": 16,
+        "points": 15,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "maitrise_des_cordes",
+        "carac": "dexterity",
+        "value": 14,
+        "points": 9,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "natation",
+        "carac": "strength",
+        "value": 1,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "perception_auditive",
+        "carac": "wisdom",
+        "value": -1,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "premiers_secours",
+        "carac": "wisdom",
+        "value": -1,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "psychologie",
+        "carac": "wisdom",
+        "value": 18,
+        "points": 19,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "renseignements",
+        "carac": "charisma",
+        "value": 1,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "representation",
+        "carac": "charisma",
+        "value": 1,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "saut",
+        "carac": "strength",
+        "value": 2,
+        "points": 1,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "survie",
+        "carac": "wisdom",
+        "value": -1,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      }
+    ],
+    "non_inate_skills": [
+      {
+        "name": "acrobatie",
+        "carac": "dexterity",
+        "value": 17,
+        "points": 12,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "art_de_la_magie",
+        "carac": "intelligence",
+        "value": 23,
+        "points": 20,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "connaissance_exploration",
+        "carac": "intelligence",
+        "value": 37,
+        "points": 34,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "connaissance_folklore_local",
+        "carac": "intelligence",
+        "value": 3,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "connaissance_geographie",
+        "carac": "intelligence",
+        "value": 15,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 12
+      },
+      {
+        "name": "connaissance_histoire",
+        "carac": "intelligence",
+        "value": 3,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "connaissance_mysteres",
+        "carac": "intelligence",
+        "value": 15,
+        "points": 12,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "connaissance_nature",
+        "carac": "intelligence",
+        "value": 3,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "connaissance_noblesse",
+        "carac": "intelligence",
+        "value": 3,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "connaissance_plan",
+        "carac": "intelligence",
+        "value": 3,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "connaissance_religion",
+        "carac": "intelligence",
+        "value": 3,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "crochetage",
+        "carac": "dexterity",
+        "value": 7,
+        "points": 2,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "drecryptage",
+        "carac": "intelligence",
+        "value": 3,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "desamorsage",
+        "carac": "intelligence",
+        "value": 3,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "dressage",
+        "carac": "charisma",
+        "value": 1,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "escamotage",
+        "carac": "dexterity",
+        "value": 5,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "langue",
+        "carac": "intelligence",
+        "value": 4,
+        "points": 1,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "profession",
+        "carac": "wisdom",
+        "value": -1,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "utilisation_d_objet_magiques",
+        "carac": "charisma",
+        "value": 1,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      }
+    ],
+    "pp": 0,
+    "gp": 0,
+    "sp": 0,
+    "cp": 0,
+    "gemmes": [],
+    "other_wealth": [],
+    "ac": 13,
+    "shield": "",
+    "armor": "Armure de cuire (+2)",
+    "strength": 12,
+    "dexterity": 20,
+    "constitution": 15,
+    "intelligence": 16,
+    "wisdom": 8,
+    "charisma": 12,
+    "temp_strength": -1,
+    "temp_dexterity": -1,
+    "temp_constitution": -1,
+    "temp_intelligence": -1,
+    "temp_wisdom": -1,
+    "temp_charisma": -1,
+    "gifts": [
+      "1",
+      "3",
+      "2",
+      "4"
+    ],
+    "reflex": [
+      10,
+      5,
+      5,
+      0,
+      0
+    ],
+    "fortitude": [
+      6,
+      2,
+      2,
+      0,
+      2
+    ],
+    "will": [
+      3,
+      2,
+      -1,
+      2,
+      0
+    ],
+    "other_capacities": [
+      "backstab ",
+      "esquive",
+      "sens des pièges",
+      "esquive instinctive"
+    ],
+    "attack_base": 5
+  },
+  {
+    "id": "char_14375",
+    "name": "Proust",
+    "level": 3,
+    "class": "Magicien",
+    "health": 10,
+    "health_max": 10,
+    "inventory": [
+      {
+        "name": "torche",
+        "quantity": 3
+      },
+      {
+        "name": "composants",
+        "quantity": 3
+      }
+    ],
+    "spell_book": [
+      "Boule de feu "
+    ],
+    "weapons": [
+      {
+        "name": "Baton",
+        "damage": 3,
+        "dice": "1d3",
+        "touch": 4,
+        "critics": "x2",
+        "range": 0,
+        "description": "oh le beau bâton"
+      }
+    ],
+    "inate_skills": [
+      {
+        "name": "artisanat",
+        "carac": "intelligence",
+        "value": 11,
+        "points": 4,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "bluff",
+        "carac": "charisma",
+        "value": 5,
+        "points": 4,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "concentration",
+        "carac": "constitution",
+        "value": 2,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "contrefaçon",
+        "carac": "intelligence",
+        "value": 7,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "deguisement",
+        "carac": "charisma",
+        "value": 1,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "deplacement_silencieux",
+        "carac": "dexterity",
+        "value": 1,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "detection",
+        "carac": "wisdom",
+        "value": 2,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "diplomatie",
+        "carac": "charisma",
+        "value": 1,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "discretion",
+        "carac": "dexterity",
+        "value": 1,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "equilibre",
+        "carac": "dexterity",
+        "value": 1,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "equitation",
+        "carac": "dexterity",
+        "value": 1,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "escalade",
+        "carac": "strength",
+        "value": 1,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "estimation",
+        "carac": "intelligence",
+        "value": 7,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "evasion",
+        "carac": "dexterity",
+        "value": 5,
+        "points": 4,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "fouille",
+        "carac": "intelligence",
+        "value": 7,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "intimidation",
+        "carac": "charisma",
+        "value": 1,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "maitrise_des_cordes",
+        "carac": "dexterity",
+        "value": 1,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "natation",
+        "carac": "strength",
+        "value": 1,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "perception_auditive",
+        "carac": "wisdom",
+        "value": 2,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "premiers_secours",
+        "carac": "wisdom",
+        "value": 2,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "psychologie",
+        "carac": "wisdom",
+        "value": 2,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "renseignements",
+        "carac": "charisma",
+        "value": 5,
+        "points": 4,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "representation",
+        "carac": "charisma",
+        "value": 1,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "saut",
+        "carac": "strength",
+        "value": 1,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "survie",
+        "carac": "wisdom",
+        "value": 2,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      }
+    ],
+    "non_inate_skills": [
+      {
+        "name": "acrobatie",
+        "carac": "dexterity",
+        "value": 5,
+        "points": 4,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "art_de_la_magie",
+        "carac": "intelligence",
+        "value": 7,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "connaissance_exploration",
+        "carac": "intelligence",
+        "value": 7,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "connaissance_folklore_local",
+        "carac": "intelligence",
+        "value": 7,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "connaissance_geographie",
+        "carac": "intelligence",
+        "value": 7,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "connaissance_histoire",
+        "carac": "intelligence",
+        "value": 7,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "connaissance_mysteres",
+        "carac": "intelligence",
+        "value": 7,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "connaissance_nature",
+        "carac": "intelligence",
+        "value": 7,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "connaissance_noblesse",
+        "carac": "intelligence",
+        "value": 7,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "connaissance_plan",
+        "carac": "intelligence",
+        "value": 7,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "connaissance_religion",
+        "carac": "intelligence",
+        "value": 7,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "crochetage",
+        "carac": "dexterity",
+        "value": 1,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "drecryptage",
+        "carac": "intelligence",
+        "value": 7,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "desamorsage",
+        "carac": "intelligence",
+        "value": 7,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "dressage",
+        "carac": "charisma",
+        "value": 1,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "escamotage",
+        "carac": "dexterity",
+        "value": 1,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "langue",
+        "carac": "intelligence",
+        "value": 7,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "profession",
+        "carac": "wisdom",
+        "value": 2,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      },
+      {
+        "name": "utilisation_d_objet_magiques",
+        "carac": "charisma",
+        "value": 1,
+        "points": 0,
+        "synergy": 0,
+        "mod_divers": 0
+      }
+    ],
+    "pp": 0,
+    "gp": 0,
+    "sp": 0,
+    "cp": 0,
+    "gemmes": [],
+    "other_wealth": [],
+    "ac": 13,
+    "shield": "null (+0)",
+    "armor": "Robe de mage (+2)",
+    "strength": 12,
+    "dexterity": 13,
+    "constitution": 14,
+    "intelligence": 25,
+    "wisdom": 14,
+    "charisma": 13,
+    "temp_strength": -1,
+    "temp_dexterity": -1,
+    "temp_constitution": -1,
+    "temp_intelligence": -1,
+    "temp_wisdom": -1,
+    "temp_charisma": -1,
+    "gifts": [
+      "dkeokp",
+      "oko",
+      "kpo"
+    ],
+    "reflex": [
+      2,
+      1,
+      1,
+      0,
+      0
+    ],
+    "fortitude": [
+      3,
+      1,
+      2,
+      0,
+      0
+    ],
+    "will": [
+      5,
+      3,
+      2,
+      0,
+      0
+    ],
+    "other_capacities": [],
+    "attack_base": 3
+  }
+]

@@ -1,0 +1,294 @@
+/* === INVENTORY CONTAINER === */
+.inventory-container {
+  background: linear-gradient(145deg, var(--parchment-light), var(--parchment-dark));
+  border: 3px solid var(--accent-copper);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow-medium);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* === TITLES === */
+.inventory-container h2 {
+  font-family: var(--font-title);
+  color: var(--accent-copper);
+  font-size: 1.5rem;
+  margin: 0 0 1rem 0;
+  text-align: center;
+  border-bottom: 2px solid var(--accent-copper);
+  padding-bottom: 0.5rem;
+  position: relative;
+}
+
+.inventory-container h2::before {
+  content: "⚔️";
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+}
+
+.inventory-container h2:last-of-type::before {
+  content: "💰";
+}
+
+/* === EQUIPMENT TABLE === */
+.equipment-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: rgba(255, 255, 255, 0.4);
+  border: 2px solid var(--accent-copper);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* === TABLE HEADER === */
+.equipment-table thead {
+  background: linear-gradient(135deg, var(--accent-copper), var(--accent-gold));
+  color: var(--parchment-light);
+}
+
+.equipment-table th {
+  padding: 0.75rem;
+  font-family: var(--font-title);
+  font-weight: 600;
+  text-align: center;
+  font-size: 0.95rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  border-right: 1px solid rgba(255,255,255,0.2);
+}
+
+.equipment-table th:last-child {
+  border-right: none;
+}
+
+/* === TABLE BODY === */
+.equipment-table tbody tr {
+  transition: all 0.2s ease;
+  border-bottom: 1px solid rgba(139, 70, 19, 0.2);
+}
+
+.equipment-table tbody tr:hover {
+  background: rgba(212, 175, 55, 0.1);
+}
+
+.equipment-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.equipment-table td {
+  padding: 0.5rem 0.75rem;
+  text-align: center;
+  color: var(--ink-black);
+  font-size: 0.9rem;
+}
+
+.equipment-table td:nth-child(odd) {
+  text-align: left;
+  font-weight: 500;
+}
+
+.equipment-table td:nth-child(even) {
+  background: rgba(255,255,255,0.3);
+  font-weight: 600;
+  color: var(--accent-red);
+}
+
+/* === WEALTH SECTION === */
+.wealth-section {
+  margin-top: 2rem;
+}
+
+.wealth-grid {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.coins-section, .gems-section, .other-section {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.4);
+  border: 2px solid var(--accent-copper);
+  border-radius: 8px;
+  padding: 1rem;
+  min-height: 120px;
+}
+
+/* === COINS SECTION === */
+.coins-section {
+  background: linear-gradient(145deg, rgba(255, 215, 0, 0.1), rgba(255, 255, 255, 0.4));
+}
+
+.coins-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.coin-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem 0;
+  border-bottom: 1px solid rgba(139, 70, 19, 0.2);
+}
+
+.coin-row:last-child {
+  border-bottom: none;
+  font-weight: 700;
+  color: var(--accent-gold);
+  border-top: 2px solid var(--accent-copper);
+  padding-top: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.coin-label {
+  font-weight: 600;
+  color: var(--ink-brown);
+  font-size: 0.9rem;
+}
+
+.coin-amount {
+  font-weight: 700;
+  color: var(--ink-black);
+  font-family: var(--font-ui);
+}
+
+/* Couleurs spécifiques des pièces */
+.pc { color: #8b4513; } /* Cuivre */
+.pa { color: #c0c0c0; } /* Argent */
+.po { color: #ffd700; } /* Or */
+.pp { color: #e6e6fa; } /* Platine */
+
+/* === GEMS & OTHER SECTIONS === */
+.gems-section {
+  background: linear-gradient(145deg, rgba(147, 0, 211, 0.1), rgba(255, 255, 255, 0.4));
+}
+
+.other-section {
+  background: linear-gradient(145deg, rgba(34, 139, 34, 0.1), rgba(255, 255, 255, 0.4));
+}
+
+.section-title {
+  font-family: var(--font-title);
+  font-weight: 600;
+  color: var(--accent-copper);
+  margin: 0 0 0.75rem 0;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.gems-section .section-title::before { content: "💎 "; }
+.other-section .section-title::before { content: "📜 "; }
+
+.section-content {
+  min-height: 60px;
+  color: var(--ink-brown);
+  font-style: italic;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .inventory-container {
+    padding: 1rem;
+    margin: 0 1rem;
+  }
+  
+  .wealth-grid {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .equipment-table {
+    font-size: 0.8rem;
+  }
+  
+  .equipment-table th,
+  .equipment-table td {
+    padding: 0.5rem 0.25rem;
+  }
+  
+  .inventory-container h2::before {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .coins-list {
+    gap: 0.25rem;
+  }
+  
+  .coin-row {
+    font-size: 0.85rem;
+  }
+  
+  .equipment-table {
+    font-size: 0.75rem;
+  }
+}
+
+/* === ANIMATIONS === */
+.inventory-container {
+  animation: slideInUp 0.5s ease;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === INTERACTIVE ELEMENTS === */
+.coin-row:hover {
+  background: rgba(212, 175, 55, 0.1);
+  border-radius: 4px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.equipment-table tbody tr:nth-child(even) {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+/* === SECTION BORDERS DECORATIVE === */
+.coins-section::before,
+.gems-section::before,
+.other-section::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 4px;
+  background: var(--accent-gold);
+  border-radius: 2px;
+}
+
+.coins-section,
+.gems-section,
+.other-section {
+  position: relative;
+}
+
+.gems-section::before {
+  background: #9400d3;
+}
+
+.other-section::before {
+  background: #228b22;
+}

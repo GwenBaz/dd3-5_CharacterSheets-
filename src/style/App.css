@@ -1,0 +1,327 @@
+/* === VARIABLES CSS THEME D&D 3.5 === */
+:root {
+  /* Couleurs principales */
+  --parchment-light: #f4f1e8;
+  --parchment-dark: #e8e2d5;
+  --ink-black: #2c1810;
+  --ink-brown: #4a3728;
+  --accent-gold: #d4af37;
+  --accent-copper: #8b4513;
+  --accent-red: #8b2635;
+  --accent-green: #2d5016;
+  
+  /* Ombres et effets */
+  --shadow-light: 0 2px 8px rgba(44, 24, 16, 0.1);
+  --shadow-medium: 0 4px 16px rgba(44, 24, 16, 0.2);
+  --shadow-heavy: 0 8px 32px rgba(44, 24, 16, 0.3);
+  
+  /* Polices */
+  --font-title: 'Cinzel', 'Times New Roman', serif;
+  --font-body: 'Crimson Text', 'Georgia', serif;
+  --font-ui: 'Source Sans Pro', sans-serif;
+}
+
+/* === RESET ET BASE === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background: linear-gradient(135deg, #2c1810 0%, #4a3728 100%);
+  color: var(--ink-black);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* === CONTAINER PRINCIPAL === */
+.lobby-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(139, 38, 53, 0.1) 0%, transparent 50%),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(0,0,0,0.05)"/><circle cx="75" cy="75" r="0.5" fill="rgba(0,0,0,0.03)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+}
+
+/* === TITRES === */
+h1 {
+  font-family: var(--font-title);
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--accent-gold);
+  text-shadow: 
+    2px 2px 0px var(--ink-black),
+    4px 4px 8px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+  position: relative;
+}
+
+h2 {
+  font-family: var(--font-title);
+  font-size: 1.8rem;
+  color: var(--ink-brown);
+  margin: 2rem 0 1.5rem 0;
+  text-align: center;
+  position: relative;
+  padding: 1rem;
+}
+
+h2::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  right: 20%;
+  height: 2px;
+  background: linear-gradient(
+    90deg, 
+    transparent, 
+    var(--accent-copper), 
+    transparent
+  );
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+/* === GRILLE DE PERSONNAGES === */
+.characters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+  padding: 1rem 0;
+}
+
+/* === CARTE DE PERSONNAGE === */
+.character-card {
+  background: 
+    linear-gradient(145deg, var(--parchment-light) 0%, var(--parchment-dark) 100%);
+  border: 3px solid var(--accent-copper);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow-medium);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.character-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: 
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 10px,
+      rgba(139, 70, 19, 0.05) 10px,
+      rgba(139, 70, 19, 0.05) 20px
+    );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.character-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: var(--shadow-heavy);
+  border-color: var(--accent-gold);
+}
+
+.character-card:hover::before {
+  opacity: 1;
+}
+
+.character-card:active {
+  transform: translateY(-2px) scale(1.01);
+}
+
+/* === CONTENU CARTE === */
+.character-name {
+  font-family: var(--font-title);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--ink-black);
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid var(--accent-copper);
+  padding-bottom: 0.5rem;
+}
+
+.character-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+  color: var(--ink-brown);
+}
+
+.character-level {
+  font-weight: 600;
+  color: var(--accent-red);
+  background: rgba(139, 38, 53, 0.1);
+  padding: 0.2rem 0.8rem;
+  border-radius: 15px;
+  border: 1px solid var(--accent-red);
+}
+
+/* === BOUTON CRÉER === */
+.create-button {
+  display: block;
+  margin: 3rem auto 2rem auto;
+  font-family: var(--font-title);
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 1rem 2.5rem;
+  background: linear-gradient(145deg, var(--accent-gold) 0%, #b8941f 100%);
+  color: var(--ink-black);
+  border: 3px solid var(--accent-copper);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: var(--shadow-medium);
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+.create-button:hover {
+  background: linear-gradient(145deg, #f4d03f 0%, var(--accent-gold) 100%);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-heavy);
+  padding-left: 3.5rem;
+}
+
+.create-button:hover::before {
+  opacity: 1;
+}
+
+.create-button:active {
+  transform: translateY(0);
+  box-shadow: var(--shadow-light);
+}
+
+/* === ANIMATIONS === */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.character-card {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.character-card:nth-child(2) { animation-delay: 0.1s; }
+.character-card:nth-child(3) { animation-delay: 0.2s; }
+.character-card:nth-child(4) { animation-delay: 0.3s; }
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .lobby-container {
+    padding: 1rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h1::before,
+  h1::after {
+    display: none;
+  }
+  
+  .characters-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .create-button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  .character-card {
+    padding: 1rem;
+  }
+}
+
+/* === STYLES POUR LES CLASSES D&D === */
+.class-guerrier { border: 4px solid #8b2635; }
+.class-magicien { border: 4px solid #4a5baa; }
+.class-roublard { border: 4px solid #2d5016; }
+.class-pretre { border: 4px solid #d4af37; }
+.class-rodeur { border: 4px solid #228b22; }
+.class-barbare { border: 4px solid #8b0000; }
+
+/* === EFFET PARCHEMIN === */
+.parchment-effect {
+  background: 
+    linear-gradient(45deg, transparent 0%, rgba(139, 70, 19, 0.1) 50%, transparent 100%),
+    var(--parchment-light);
+  background-size: 20px 20px;
+  position: relative;
+}
+
+.parchment-effect::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(139, 70, 19, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(139, 70, 19, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+
+input[type="number"]{
+  background-color: antiquewhite;
+  height : 2em ;
+  padding : 3px ;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/*
+####################
+......UTILITAIRE....
+####################
+*/
+.line {
+  display: flex;
+  flex-direction: row;
+}
+
+.quit{
+  background-color: red;
+}

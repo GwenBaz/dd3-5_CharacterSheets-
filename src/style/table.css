@@ -1,0 +1,80 @@
+:root {
+  /* Couleurs principales */
+  --parchment-light: #f4f1e8;
+  --parchment-dark: #e8e2d5;
+  --ink-black: #2c1810;
+  --ink-brown: #4a3728;
+  --accent-gold: #d4af37;
+  --accent-copper: #8b4513;
+  --accent-red: #8b2635;
+  --accent-green: #2d5016;
+
+  /* Ombres et effets */
+  --shadow-light: 0 2px 8px rgba(44, 24, 16, 0.1);
+  --shadow-medium: 0 4px 16px rgba(44, 24, 16, 0.2);
+  --shadow-heavy: 0 8px 32px rgba(44, 24, 16, 0.3);
+
+  /* Polices */
+  --font-title: 'Cinzel', 'Times New Roman', serif;
+  --font-body: 'Crimson Text', 'Georgia', serif;
+  --font-ui: 'Source Sans Pro', sans-serif;
+}
+
+.attackTable {
+  border: 1px solid var(--ink-black);
+  width : 95%;
+  margin-left: 5%;
+  margin-bottom: 1em;;
+}
+
+.row-name {
+  background-color: var(--ink-black);
+  color: antiquewhite;
+
+}
+
+.center{
+  align-items: center;
+}
+
+
+.attackTable p {
+  padding : 3px ; 
+  border: 1px solid var(--ink-black);
+}
+
+
+.attackTable .field-micro{ width : 10% }
+.attackTable .field-small{ width : 25% }
+.attackTable .field-big{ width : 75% }
+.attackTable input{
+  background-color: antiquewhite;
+  height : 2.3em ;
+  padding : 3px ;  
+}
+.buttons-column{
+  width: 2.5em ;
+  padding: 5px;
+}
+
+.buttons-column button{
+  width: 2em;
+  height: 2em;
+  background-color: var(--ink-black);
+  color: antiquewhite;
+  box-shadow: var(--shadow-medium);
+  border: 1px solid var(--accent-copper);
+  border-radius: 8px;
+  margin-bottom: 2px;
+}
+.buttons-column button:hover{
+  background-color: antiquewhite;
+  color: var(--ink-black);
+}
+
+
+.line {
+  display: flex;
+  flex-direction: row;
+}
+

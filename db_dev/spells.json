@@ -1,0 +1,24 @@
+[
+  {
+    "id": "",
+    "name": "jijoij",
+    "level": 3,
+    "range": "oij",
+    "length": "ijoi",
+    "school": "joijoijoi",
+    "incantation": "joij",
+    "magic_resistance": false,
+    "effect": "joijo"
+  },
+  {
+    "id": "",
+    "name": "Boule de feu ",
+    "level": 3,
+    "range": "34",
+    "length": "prooek",
+    "school": "jijoij",
+    "incantation": "oijoijoij",
+    "magic_resistance": true,
+    "effect": "KAAABBOOOMMM"
+  }
+]

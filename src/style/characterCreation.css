@@ -1,0 +1,162 @@
+/*
+===========================
+Style for the Character Creation page
+===========================
+*/
+:root {
+    /* Couleurs principales */
+    --parchment-light: #f4f1e8;
+    --parchment-dark: #e8e2d5;
+    --ink-black: #2c1810;
+    --ink-brown: #4a3728;
+    --accent-gold: #d4af37;
+    --accent-copper: #8b4513;
+    --accent-red: #8b2635;
+    --accent-green: #2d5016;
+
+    /* Ombres et effets */
+    --shadow-light: 0 2px 8px rgba(44, 24, 16, 0.1);
+    --shadow-medium: 0 4px 16px rgba(44, 24, 16, 0.2);
+    --shadow-heavy: 0 8px 32px rgba(44, 24, 16, 0.3);
+
+    /* Polices */
+    --font-title: 'Cinzel', 'Times New Roman', serif;
+    --font-body: 'Crimson Text', 'Georgia', serif;
+    --font-ui: 'Source Sans Pro', sans-serif;
+}
+
+.creation-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    min-height: 100vh;
+    background-color: antiquewhite;
+}
+
+.note {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: var(--ink-brown);
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+}
+.text-input {
+    width: 10em;
+}
+.large-input {
+    width: 20em;
+}
+.small-input {
+    width: 3em; 
+}
+
+.list-item{
+    margin-left : 3em ; 
+}
+.list-input {
+    margin-left : 1em ; 
+    width : 15em ; 
+    border-radius: 8px;
+}
+.button-add{
+  width: 5em;
+  height: 2em;
+  background-color: var(--ink-black);
+  color: antiquewhite;
+  box-shadow: var(--shadow-medium);
+  border: 1px solid var(--accent-copper);
+  border-radius: 8px;
+  margin-left: 1em;
+}
+.button-add:hover{
+  background-color: antiquewhite;
+  color: var(--ink-black);
+}
+.button-next{
+    width : 13em; 
+    height : 3em ;
+    background-color: var(--accent-gold);
+    margin-top: 2em ; 
+    border: 2px solid var(--ink-brown); 
+    border-radius: 16px;
+    text-align: center;
+    position: "relative"; 
+}
+.button-next:hover{
+    background-color: var(--ink-brown);
+    color: antiquewhite;
+}
+/*
+===========================
+Style for the Step 1 section 
+===========================
+*/
+
+.cara-input .name {
+    width : 8em; 
+}
+.cara-input input {
+    width : 2em;
+    margin-right: 1em;  
+}
+.cara-input .mod {
+    width : 8em; 
+}
+/*
+===========================
+Style for the Step 2 section 
+===========================
+*/
+.gift-input{
+    width : 20em; 
+    height : 2em ;
+    border-radius: 8px; 
+    margin-top: 5px;
+}
+/*
+===========================
+Style for the Step 3 section 
+===========================
+*/
+.skill-text{
+    width : 17em; 
+    margin-left : 1em ; 
+    margin-top : 2px ; 
+}
+.skill-input{
+    margin-top : 2px ; 
+    width : 4em ; 
+}
+/*
+===========================
+Style for the Step 4 section 
+===========================
+*/
+.equip-table{
+    margin-top : 1em ; 
+    border : 2px solid var(--ink-brown); 
+    border-radius : 12px; 
+    width : 30em ; 
+}
+.equip-table th, .equip-table td{
+    border-bottom : 1px solid var(--ink-brown); 
+    padding : 0.5em ; 
+    text-align : left ; 
+}
+.equip-entry{
+    margin-top : 1em ; 
+}
+.equip-input{
+    width : 24em ; 
+    border-radius : 8px; 
+}
+.qty-input{
+    width : 9em ; 
+    margin-left : 1em ; 
+    border-radius : 8px; 
+}
+/*
+===========================
+Style for the Step 5 section 
+===========================
+*/

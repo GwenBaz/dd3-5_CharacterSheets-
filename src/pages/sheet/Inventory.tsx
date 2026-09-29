@@ -1,21 +1,16 @@
-import { useState } from 'react'
-import '../../style/inventory.css'
+import React, { useState } from 'react'
+import '@/style/inventory.css'
 
-function Inventory({character}) {
+function Inventory({ character }: { character: any }) {
+  const [items] = useState<any[]>(character.inventory || [])
+  const [coins] = useState<any>(character.getWealth())
 
-
-  const [items, setItems] = useState(character.intventory) 
-  const [coins, setCoins] = useState(character.getWealth())
-
-
-  // Diviser l'équipement en 2 colonnes
   const leftColumn = items.filter((_, index) => index % 2 === 0)
   const rightColumn = items.filter((_, index) => index % 2 === 1)
   const maxRows = Math.max(leftColumn.length, rightColumn.length)
 
   return (
     <div className="inventory-container">
-      {/* Section Équipement */}
       <h2>Équipement</h2>
       <table className="equipment-table">
         <thead>
@@ -29,19 +24,17 @@ function Inventory({character}) {
         <tbody>
           {Array.from({ length: maxRows }, (_, index) => (
             <tr key={index}>
-              <td>{leftColumn[index]?.name || ""}</td>
-              <td>{leftColumn[index]?.quantity || ""}</td>
-              <td>{rightColumn[index]?.name || ""}</td>
-              <td>{rightColumn[index]?.quantity || ""}</td>
+              <td>{leftColumn[index]?.name || ''}</td>
+              <td>{leftColumn[index]?.quantity || ''}</td>
+              <td>{rightColumn[index]?.name || ''}</td>
+              <td>{rightColumn[index]?.quantity || ''}</td>
             </tr>
           ))}
         </tbody>
       </table>
 
-      {/* Section Richesses */}
       <h2>Richesses</h2>
       <div className="wealth-grid">
-        {/* Pièces */}
         <div className="coins-section">
           <div className="section-title">Monnaies</div>
           <div className="coins-list">
@@ -68,28 +61,14 @@ function Inventory({character}) {
           </div>
         </div>
 
-        {/* Gemmes */}
         <div className="gems-section">
           <div className="section-title">Gemmes</div>
-          <div className="section-content">
-            {coins.gemmes ? (
-              <div>{coins.gemmes}</div>
-            ) : (
-              <div>Aucune gemme</div>
-            )}
-          </div>
+          <div className="section-content">{coins.gemmes ? <div>{coins.gemmes}</div> : <div>Aucune gemme</div>}</div>
         </div>
 
-        {/* Autres richesses */}
         <div className="other-section">
           <div className="section-title">Autres</div>
-          <div className="section-content">
-            {coins.other ? (
-              <div>{coins.other}</div>
-            ) : (
-              <div>Objets de valeur</div>
-            )}
-          </div>
+          <div className="section-content">{coins.other ? <div>{coins.other}</div> : <div>Objets de valeur</div>}</div>
         </div>
       </div>
     </div>

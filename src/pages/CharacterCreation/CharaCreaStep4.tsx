@@ -1,16 +1,16 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react'
 
-function CharaCreaStep4({ next, submitData }) {
-  const [data, setData] = useState([])
-  const [newEquipement, setNewEquipement] = useState(["", ""])
-  
+export default function CharaCreaStep4({ next, submitData }: any): React.ReactElement {
+  const [data, setData] = useState<any[]>([])
+  const [newEquipement, setNewEquipement] = useState<any>(['', ''])
+
   useEffect(() => {
     // Initialisation si nécessaire
   }, [])
 
-  function handleChange(e) {
+  function handleChange(e: any) {
     const { name, value } = e.target
-    if (name === "equip") {
+    if (name === 'equip') {
       setNewEquipement([value, newEquipement[1]])
     } else {
       setNewEquipement([newEquipement[0], parseInt(value)])
@@ -18,20 +18,18 @@ function CharaCreaStep4({ next, submitData }) {
   }
 
   function handleSubmit() {
-    // Vérifier que les champs ne sont pas vides
-    if (newEquipement[0].trim() !== "" && newEquipement[1] !== "") {
-      // Utiliser la syntaxe spread pour créer un nouveau tableau
+    if (newEquipement[0].trim() !== '' && newEquipement[1] !== '') {
       setData([...data, [...newEquipement]])
-      // Réinitialiser le formulaire
-      setNewEquipement(["", ""])
-      // Réinitialiser les inputs
-      document.querySelector('input[name="equip"]').value = "";
-      document.querySelector('input[name="qte"]').value = "";
+      setNewEquipement(['', ''])
+      const equipInput = document.querySelector('input[name="equip"]') as HTMLInputElement | null
+      const qteInput = document.querySelector('input[name="qte"]') as HTMLInputElement | null
+      if (equipInput) equipInput.value = ''
+      if (qteInput) qteInput.value = ''
     }
   }
 
   function handleNextPage() {
-    submitData("possessions", data)
+    submitData('possessions', data)
     next()
   }
 
@@ -57,27 +55,29 @@ function CharaCreaStep4({ next, submitData }) {
           </tbody>
         </table>
         <div className="line equip-entry">
-          <input 
-            type="text" 
-            name="equip" 
+          <input
+            type="text"
+            name="equip"
             placeholder="Nom de l'équipement"
             onChange={handleChange}
             className="equip-input"
           />
-          <input 
-            type="number" 
-            name="qte" 
+          <input
+            type="number"
+            name="qte"
             min="1"
             placeholder="Quantité"
             onChange={handleChange}
             className="qty-input"
           />
-          <button onClick={handleSubmit} className="button-add">Ajouter</button>
+          <button onClick={handleSubmit} className="button-add">
+            Ajouter
+          </button>
         </div>
       </div>
-      <button onClick={handleNextPage} className="button-next">Page suivante</button>
+      <button onClick={handleNextPage} className="button-next">
+        Page suivante
+      </button>
     </>
   )
 }
-
-export default CharaCreaStep4

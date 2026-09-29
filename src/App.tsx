@@ -1,24 +1,17 @@
-// Importing dependencies
+import React from 'react'
 import {
-  BrowserRouter as Router,
   Routes,
   Route,
   Navigate,
-  useNavigate
-} from "react-router-dom";
+} from 'react-router-dom'
 
+import Lobby from './pages/Lobby'
+import Sheet from './pages/sheet/Sheet'
+import CharacterCreation from './pages/CharacterCreation/CharacterCreation'
+import './style/App.css'
 
-import Lobby from "./pages/Lobby";
-import Sheet from "./pages/sheet/Sheet";
-import CharacterCreation from "./pages/CharacterCreation/CharacterCreation";
-import "./style/App.css"
-
-
-function App() {
-  const navigate = useNavigate()
-
+function App(): React.ReactElement {
   return (
-
     <div className="App">
       <Routes>
         <Route path="/" element={<Lobby />} />
@@ -27,7 +20,7 @@ function App() {
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

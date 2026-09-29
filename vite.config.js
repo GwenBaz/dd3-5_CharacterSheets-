@@ -1,8 +1,9 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import { resolve } from 'path'
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react({ jsxRuntime: 'automatic' })],
   // Empêche Vite d'effacer l'écran, utile avec Tauri
   clearScreen: false,
   // Configuration pour le dev server de Tauri
@@ -18,5 +19,10 @@ export default defineConfig({
     // Ne pas minifier en dev pour un meilleur debug
     minify: !process.env.TAURI_DEBUG ? 'esbuild' : false,
     sourcemap: !!process.env.TAURI_DEBUG,
+  },
+  resolve: {
+    alias: {
+      '@': resolve(__dirname, 'src'),
+    },
   },
 })
